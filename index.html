@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>ClearPad</title>
+</head>
+<body> 
+    <header>
+        <img src="logo.png" width="45px" style="position: relative; margin-left: 5px;"><span class="title"><h1>ClearPad</h1></span> <span class="right"><input class="btRight login" type="button" value="Login"></span>
+    </header>
+<div class="corpo">
+    <div class="corpoPosts">
+    </div>
+</div>
+<div class="postar"><span class="container">
+    <div class="searchContainer"><textarea name="" id="inputText" class="inputText" placeholder="Escreva a sua anotação..."></textarea>
+    <span class="labelContainer"><label for="image-input" class="link" title="Selecionar uma imagem"><i class="fas fa-camera"></i></label>
+    <button class="send" onclick="adicionarAnotacao()"><i class="fas fa-paper-plane"></i></button></span></div>
+    <input type="file" id="image-input" accept="image/*" style="display: none;">
+    
+    </span></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</html>
